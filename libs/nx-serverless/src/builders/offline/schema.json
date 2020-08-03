@@ -27,6 +27,18 @@
       "type": "string",
       "description": "The host to inspect the process on"
     },
+    "inspect": {
+      "type": "boolean",
+      "description": "Flag to enable debug (inspect)"
+    },
+    "args": {
+      "type": "array",
+      "description": "The additional arguments",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
     "port": {
       "type": "number",
       "default": "7777",

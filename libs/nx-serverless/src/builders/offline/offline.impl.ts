@@ -151,6 +151,9 @@ function getExecArgv(options: ServerlessExecuteBuilderOptions) {
       }
     }
   }
+  for (const arg of options.args) {
+    args.push(arg);
+  }
   return args;
 }
 
